@@ -1,100 +1,370 @@
 <!DOCTYPE html>
-<script>
-  // Set the date we're counting down to
-  var countDownDate = new Date("Jan 1, 2022 00:00:00").getTime();
-  
-  // Update the count down every 1 second
-  var x = setInterval(function() {
-  
-    // Get today's date and time
-    var now = new Date().getTime();
-  
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-  
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-    // Display the result in the element with id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-  
-    // If the count down is finished, write some text
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-  }, 1000);
-  </script>
-<html>
-  <head>
-    <title>Snell Scholarship Foundation</title>
-    <link rel="SSF Logo" type="image/png" href="https://drive.google.com/uc?export=view&id=1xszKuOnOamdCLlzIM4ONbAaJf7N0FVX6"/>
-  </head>
-<style>
+<html lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-body, html {
-  height: 100%;
-  margin: 0;
-}
+  <title>Snell Scholarship Foundation</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-.bgimg {
-  background-color: black;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
-}
+  <!-- Favicons -->
+  <link href="assets/img/favicon-1.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-.topleft {
-  position: absolute;
-  top: 0;
-  height: 10%;
-  width: 10%;
-  left: 16px;
-}
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
+  <!-- =======================================================
+  * Template Name: Bootslander - v4.7.0
+  * Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
 <body>
 
-<div class="bgimg">
-  <div class="topleft">
-    <!-- <img src="https://drive.google.com/uc?id=117b1aDYSS7cS9-PwZubOBGhePAgvojZI"/> -->
-  </div>
-  <div class="middle">
-    <h1>COMING SOON</h1>
-    <hr>
-    <p id="demo"></p>
-  </div>
-  <div class="bottomleft">
-  </div>
-</div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <!-- <h1><a href="index.html"><span>Bootslander</span></a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="index.html"><img src="assets/img/Horizontal Logo.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Awards</a></li>
+          <li><a class="nav-link scrollto" href="#details">About</a></li>
+          <li><a class="nav-link scrollto" href="#team">Application</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+          <div data-aos="zoom-out">
+            <h1>Welcome to the <br/><span>2022 Snell Scholarship</span></h1>
+            <h2>Providing financial and professional aid to students of marginalized groups</h2>
+            <div class="text-center text-lg-start">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+          <img src="assets/img/heroimg.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Awards Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch" data-aos="fade-right">
+            <img src="assets/img/frontimage.png" width=90% height=90%/>
+          </div>
+          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
+            <h3>Award(s)</h3>
+            <p>Two winners will be chosen -- one male and one female. Both winners will receive a <b>cash reward</b>, an <b>optional referral to Google</b> and a special appreciation gift for participating in the scholarship.</p>
+
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon"><i class="bi bi-currency-exchange"></i></div>
+              <h4 class="title">Cash Reward</h4>
+              <p class="description">We are offering up to $1,000 cash per student. Payout options include cryptocurrency, Cash App, Apple Pay or physical check!</p>
+            </div>
+
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon"><i class="bi bi-google"></i></div>
+              <h4 class="title">Google Referral</h4>
+              <p class="description">Google offers tons of competitive career and internship opportunities spanning a wide variety of business areas and skill disciplines. Should the winner(s) express an interest in being considered for a role, a Google referral will be provided.</p>
+            </div>
+
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-gift"></i></div>
+              <h4 class="title">Special Gift</h4>
+              <p class="description">Only winners will get more details!</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Awards Section -->
+
+    <!-- ======= Details Section ======= -->
+    <section id="details" class="details">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>About</h2>
+          <p>What is the snell scholarship?</p>
+        </div>
+
+        <div class="row content">
+          <div class="col-md-4" data-aos="fade-right">
+            <img src="assets/img/graduate.jpeg" class="img-fluid" alt="" width=40% height=40%>
+          </div>
+          <div class="col-md-8 pt-4" data-aos="fade-up">
+            <h3>Purpose</h3>
+              <p>This scholarship has been developed in an effort to further promote formal, post-secondary education with a specific focus in science, technology, engineering and mathematics (STEM).</p>
+              <p>As a graduate of a privately-funded, minority-serving science program, I understand how much even the smallest of financial or mentorial contributions can mean. Matriculating through these rigorous programs is hardly ever easy, and support in all forms is typically appreciated and remembered forever. </p>
+              <p>With that said, through SSF I would like to use my newfound ability to now “pay it forward,” to hopefully inspire a new generation of students who have the potential to change the world.</p>
+              <p>The main goals of the scholarship are to provide:</p>
+            <ul>
+              <li><i class="bi bi-check"></i> Peer mentorship</li>
+              <li><i class="bi bi-check"></i> Financial support</li>
+              <li><i class="bi bi-check"></i> Industry connections & opportunities</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row content">
+          
+          <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
+            <img src="assets/img/img-bg-crop.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
+            <h3>Meet The Founder</h3>
+            <p>
+              Mr. Donnell Debnam Jr. is a Prince George’s County native from Largo, Maryland. He attended and graduated from Largo High School in 2017 
+              and is now a recent graduate of Hampton University, where he attained a Bachelor’s of Science degree in Computer Science (with honors).
+            </p>
+            <p>
+              Like many others, Donnell graduated high school with no plan to continue studying due to poor grades and a lack of 
+              preparation, where he found himself desperately applying to various collegiate programs once 
+              reality had sunken in. Through the graces of God and the influence of his family, Donnell enrolled in a probationary 
+              summer program at Hampton, in which he’d study on campus for two months and depending on his performance, could 
+              get admitted into the university. After deep consideration, he accepted the challenge in 2017 and never looked back.
+            </p>
+            <p>
+              Despite having no coding experience prior to college, Donnell propelled through the 
+              computer science curriculum and went on to complete two internships with Google as a Software Engineer in Los Angeles, California. 
+              He then used these experiences as well as the chip on his shoulder from being a probationary admittance to motivate his peers on 
+              campus by hosting interview prep sessions, tech workshops, tech talks, resumè reviews and more.
+            </p>
+            <p>
+              During his time at Hampton, Donnell pushed his agenda to build a network of aspiring scientists by leading various 
+              organizations -- the most honorable being serving as President of Hampton's <a href="https://www.acm.org/chapters/about-chapters" target="_blank">Association for Computing Machinery (ACM)</a>. 
+              Donnell proved his devotion not only to his peers, but also to faculty within the computer science department which brought forth 
+              opportunities such as serving as a tutor for all computer science courses and approval to organize an artificial intelligence 
+              research group, led by one of his instructors.
+            </p>
+            <p>
+              Upon receiving his degree in May 2021, Donnell began his career as a full-time software engineer at Google in their Manhattan, NYC office, building controllers and user interfaces for Nest Home products. 
+            </p>
+          </div>
+
+      </div>
+    </section><!-- End Details Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonial1.png" class="testimonial-img" alt="">
+                <h3>Donnell Debnam Jr.</h3>
+                <h4>Founder</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I know how it feels to not have a scholarship. I know how it feels to have no financial support 
+                  or a job to provide for myself as a full-time student. If this scholarship can impact at least 
+                  one student and assist them with their finances or studies, then mission accomplished.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <!-- Eligibility subsection -->
+        <div>
+          <div class="section-title" data-aos="fade-up">
+            <h2>Application</h2>
+            <p>Eligibility</p>
+          </div>
+          <div data-aos="fade-up">
+              <p>Please share the <a href="SSF Flyer 2022.png" target="_blank">media flyer</a> with anyone who may meet these requirements and be interested in this opportunity!</p>
+              <p>The applicant <u>must</u> identify as Black or Latinx and meet <u>at least two</u> of the following requirements:</p>
+            <ul>
+              <li></i> STEM major</li>
+              <li></i> HBCU student</li>
+              <li></i> 2.5+ weighted GPA</li>
+              <li></i> Undergraduate student</li>
+              <li></i> First-generation university student</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Timeline subsection -->
+        <div data-aos="fade-up">
+          <div class="section-title">
+            <p>Timeline</p>
+          </div>
+          <div data-aos="fade-up">
+            <p>The following timeline will be followed for the program:</p>
+            <table class="table table-sm">
+              <thead>
+                <tr>
+                  <th scope="col">Milestone</th>
+                  <th scope="col">Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Record -->
+                <tr>
+                  <td>Applications open</td>
+                  <td>February 1, 2022 (12:00 AM EST)</td>
+                </tr>
+                <!-- Record -->
+                <tr>
+                  <td>Applications close</td>
+                  <td>May 31, 2022 (11:59 PM EST)</td>
+                </tr>
+                <!-- Record -->
+                <tr>
+                  <td>Results sent out</td>
+                  <td>by June 28, 2022</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Apply subsection -->
+        <div data-aos="fade-up">
+          <div class="section-title">
+            <p>Apply</p>
+          </div>
+          <p>Applications will open <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_x9LjjsQB5GnvSSQhVx2z0U6WtH3SBJYpAQFxED8oRvEGYw/viewform?usp=sf_link" target="_blank">here</a> on February 1, 2022.</p>
+          <p>For convenience, scan the QR-code to access the application:</p>
+          <img src="assets/img/qr-code.png" width=20% height=20%>
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+            <div class="info">
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email: 
+                <a href="mailto:snellscholars@gmail.com">snellscholars@gmail.com</a></h4>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Snell Scholarship Foundation, Inc.</span></strong> All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/ -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
-</html>
 
+</html>
