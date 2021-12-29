@@ -680,6 +680,11 @@ section {
   line-height: 24px;
   font-size: 14px;
 }
+.about img {
+  position:absolute;
+  max-width: 90%;
+  max-height: 90%;
+}
 .about .video-box {
   background-size: contain;
   min-height: 300px;
