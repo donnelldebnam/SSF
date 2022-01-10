@@ -838,6 +838,11 @@ section {
 .details .content p:last-child {
   margin-bottom: 0;
 }
+@media (max-width: 1024px) {
+  .details img#graduate {
+    display: none;
+  }
+}
 
 /*--------------------------------------------------------------
 # Testimonials
